@@ -1,0 +1,42 @@
+复制和移动文件
+cp: copy
+cp SRC DEST
+
+cp file1 file2
+
+默认不复制目录
+
+    -r 递归复制
+    -i 交互式
+    -f 强制复制
+    -p 保留原有文件的属主属组时间戳(默认的是谁复制，文件属于谁)
+    -P 保持链接文件
+    -d 保持链接自由
+    -L 复制链接
+    -R -r 保持递归链接
+    -a 归档复制，常用于备份
+
+cp /etc/{a,b,a_b/c} /home/     复制三个文件到home
+
+
+
+
+
+mv:move
+移动文件
+
+
+mv [源]SRC [目标]DEST
+mv -t [目标]DEST [源]SRC
+
+    -i 交互
+    -f 强制覆盖
+
+
+install 
+    -d DIRECOTRY  ... : 创建目录
+    SRC DEST
+install -t DIRECTORY SRC 
+
+        -m 更改权限，若不指定则保持原来权限属性
+

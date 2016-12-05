@@ -1,0 +1,121 @@
+文件系统:
+rootfs: 根文件系统
+
+FHS:Linux
+
+/boot: 系统启动相关的文件，如内核、initrd,以及grub(bootloader)
+/dev:设备文件
+    设备文件:
+        块设备：随机访问，数据块
+        字符设备：线性访问，按字符为单位
+        设备号:主设备号(major)和次设备号(minor)
+/etc:配置文件
+/home:用户的家目录，每一个用户的家目录通常默认为/home/USERNAME
+/root:管理员的家目录
+/lib:库文件
+    静态库,  .a
+    动态库,  .dll ,  .so (shared object)
+    /lib/modules:内核模块文件
+/media:挂载点目录
+/mnt:挂载点目录，额外的临时文件系统
+/opt:可选目录，第三方程序的按装目录
+/proc:伪文件系统，内核映射文件
+/sys:伪文件系统，跟硬件设备相关的属性映射文件
+/tmp:临时文件,/var/tmp
+/var:可变化的文件
+/bin:binary  可执行文件，用户命令
+/sbin:管理命令
+
+/usr:user,shared,read-only  全局共享只读文件
+    /usr/bin
+    /usr/sbin
+    /usr/lib
+
+
+第三方软件安装位置：
+/usr/local:
+    /usr/local/bin
+    /usr/local/sbin
+    /usr/local/lib
+
+命名规则：
+1、长度不能超过255个字符：
+2、不能使用/当文件名，其它字符都可以作文件名，包括空格
+3、严格区分大小写
+
+
+相对路径：
+绝对路径：
+
+
+
+
+
+文件管理
+    
+目录管理
+
+ls
+cd
+pwd
+
+mkdir:创建空目录
+    -p:
+    -v:verbose 详细信息
+/root/x/y/z
+
+mkdir -pv /mnt/test/x/m /mnt/test/y
+mkdir -pv /mnt/test/{x/m,y}
+
+~USERNAME
+
+命令行展开:
+/mnt/test2/
+a_b,a_c,d_b,d_c
+(a+d)(b+c)=ab+ac+bd+dc
+{a,d}_{b,c}
+
+
+
+#tree  查看目录树
+
+删除目录： rmdir (remove directory)
+    删除空目录
+    -p
+
+
+文件创建和删除
+# touch 
+    -a  改变访问时间
+    -m  改变改变时间
+    -t  改变时间的参数
+    -c  不创建任何文件
+
+
+# stat
+
+创建文件，可以使用文件编辑器
+
+ASCII:标准信息交换代码
+
+128不同的字符:
+    二进制:
+
+
+
+
+删除文件:rm
+    -i
+    -f  不用提示
+    -r  递归删除
+    
+
+rm -rf 
+
+
+运行程序
+设备管理
+软件管理
+进程管理
+网络管理
+

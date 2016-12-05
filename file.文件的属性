@@ -1,0 +1,125 @@
+ls
+  -l:长格式
+   文件类型：
+       -：普通文件（f）
+       d:目录文件
+       b:块设备文件（block)
+       c:字符设备文件（character）
+       l:符号链接文件(symbolic link file)
+       p:命令管道文件（pipe)
+       s:套接字文件（socket）
+    文件权限：9位，每三位一组，每一组：rwx(读，写，执行)，r--
+    文件硬链接都次数
+    文件的属性（owner)
+    文件的属组（group)
+    文件大小（size),单位是字节
+    时间戳（timestamp) 最近一次被(修改)的时间
+        访问：access
+        修改: modify 改变文件的内容
+        改变：change,metadata,文件的属性数据也叫元数据
+   -h:单位转换（默认kB)
+   -a:显示以.开头都隐藏文件
+        . 表示当前目录
+        .. 表示父母目录
+   -A 不显示 .  .. 目录
+   -d: 显示目录自身属性
+   -i:index node,inode 显示目录的索引结点号
+   -r:逆序显示文件
+   -R:递归(recursive)显示文件
+
+
+cd:change directory
+    家目录，主目录，home directory
+    cd ~USERNAME: 进入指定用户的家目录
+    cd -:在当前目录和前一次所在的目录之间来回切换
+
+命令类型：
+    内置命令（shell内置）
+    外部命令：在文件系统的某个路径下有一个与命令名称相应的可执行文件
+
+环境变量：命令的内存空间
+    变量赋值
+        NAME=Jerry
+
+    PATH:使用冒号分隔的路径
+    o(1) 查找的标准，无论是从一个中找，还是在一万个东西找速度都一样
+
+
+type:显示指定属于哪种类型
+
+date:时间管理
+Linux:rtc
+
+    硬件时钟
+    系统时钟
+
+
+获得命令的使用帮助：
+内部命令：
+    help COMMAND  
+外部命令：
+    COMMAND --help
+
+
+命令手册：manual
+man COMMAND 
+
+whatis COMMAND
+
+
+分章节：
+1:用户命令
+2:系统调用
+3:库用户
+4:特殊文件(设备文件)
+5:文件格式(配置文件的语法)
+6:游戏
+7:杂项:(Miscellaneous)
+8:管理命令(/sbin,/usr/sbin,/usr/local/sbin)
+
+<>: 必须选择的
+[]: 可选的
+..: 可以出现多次
+|:多选一
+{}:分组
+
+
+MAN:
+    NAME:命令名称及功能简要说明
+    SYNOPSIS: 用法说明，包括可用的选项
+    DESCRIPTION:命令功能的详尽说明，可能包括每个选型的意义。
+    OPTIONS:说明每个选型的意义
+    FILES:此命令相关的配置文件
+    BUGS:
+    EXAMPLES:使用示例
+    SEE ALSO:另外参照
+
+翻屏：
+    向后翻一屏：SPACE
+    向前翻一屏：b
+    向后翻一行：ENTER
+    向前翻一行：k
+
+
+查找：
+    /KEYWORD:自前向后
+    ?KEYWORD：自后向前
+    n:下一个
+    N:前一个
+    q:退出
+
+hwclock -w 同步系统时间到硬件
+hwclock -s 同步硬件时间到系统
+
+
+在线文档：
+    info ls
+
+文档： /usr/share/doc
+
+goole
+
+apache ,hadoop
+
+cal:calendar
+
